@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio-Erickson dev </title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Erickson Dev</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#projectos">Projetos</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Contacto">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio" class="inicio s1">
+        
+        <div class="aprese">
+            <p><span id="nome"></span> <br>desenvolvedor Full Stack , focado na criação  <br>de aplicações web
+                modernas, funcionais e eficientes.</p>
+        </div>
+        <div class="img">
+            <img src="../img/Gemini_Generated_Image_r9gfsyr9gfsyr9gf.png" class="img">
+        </div>
+    
+    </section>
+
+    <section id="Sobre" class="sobre s2" >
+        <h2>Sobre mim</h2>
+        <div class="descricoes">
+            <p>Sou <span>Erickson Faustino</span>, desenvolvedor Full Stack, com foco no desenvolvimento de aplicações web
+            completas, desde a interface do usuário até a lógica do servidor e integração com bancos de
+            dados.  Trabalho com tecnologias modernas no front-end e back-end, buscando sempre criar
+            soluções eficientes, escaláveis e bem estruturadas. Tenho interesse em aprender continuamente,
+            resolver problemas reais e entregar produtos digitais de qualidade.</p>
+        </div>
+
+        <div class="tecnologias">
+            <div class="icon">
+                <img class="react" src="../icon/html-5-svgrepo-com.svg" alt=""> 
+            </div>
+            
+            <div class="icon">
+                <p><img class="react" src="../icon/css-3-svgrepo-com.svg" alt=""></p>
+            </div>
+
+             <div class="icon">
+                <p><img class="react" src="../icon/js-svgrepo-com.svg" alt=""></p>
+            </div>
+
+            <div class="icon">
+                <p><img class="react" src="../icon/tailwind-svgrepo-com.svg" alt=""></p>
+            </div>
+            <div class="icon">
+                <p><img class="react" src="../icon/react-javascript-js-framework-facebook-svgrepo-com.svg" alt=""></p>
+            </div>
+            <div class="icon">
+                <p><img class="react" src="../icon/node-js-svgrepo-com.svg" alt=""></p>
+            </div>
+            <div class="icon">
+                <p><img class="react" src="../icon/python-svgrepo-com.svg" alt=""></p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="projectos" class="s1">
+        
+        <h2>Meus Porjectos</h2>
+        
+        <div class="cards">
+            <div class="card1">
+                <h3>JEF</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quo ritatis q pr </p>
+                <button>Ver projecto</button>
+            </div>
+            <div class="card1">
+                <h3>INTECH</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quo ritatis q pr </p>
+                <button>Ver projecto</button>
+            </div>
+            <div class="card1">
+                <h3>Tradutor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quo ritatis q pr </p>
+                <button>Ver projecto</button>
+            </div>
+             <div class="card1">
+                <h3>jefSOFT</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quo ritatis q pr </p>
+                <button>Ver projecto</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Contacto" class="s2">
+        
+        <div>
+             <h2>Contacto</h2>
+        </div>
+       
+       <form action="">
+
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="email" name="gmail" id="email" placeholder="email">
+            <input type="text" name="text" id="conteudo" placeholder="Mensagem">
+            <button id="Enviar">Enviar</button>
+       </form>
+
+       <div class="redes">
+            <a href="https://www.facebook.com/devericksonf">
+                <img class="rede" src="../icon/facebook-svgrepo-com.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/ericksonn.dev?igsh=MTl5YjRyY24zeGJvMA==">
+                <img class="rede" src="../icon/instagram-svgrepo-com.svg" alt="">
+            </a>
+            <a href="https://wa.me/929859909">
+                <img class="rede" src="../icon/whatsapp-svgrepo-com.svg" alt="">
+            </a>
+            <a href="#">
+                <img class="rede" src="../icon/github-svgrepo-com.svg" alt="">
+            </a>
+            <a href="#">
+                <img class="rede" src="../icon/linkedin-svgrepo-com.svg" alt="">
+            </a>
+       </div>
+       
+    </section>
+
+    
+
+    <footer>
+        
+        <p>&copy Todos os direitos reservados.</p>
+        
+    </footer>
+
+    <script>
+        const texto = "Olá, eu sou Erickson"
+        let i = 0
+
+        function digitar(){
+            if(i < texto.length){
+                document.getElementById("nome").textContent += texto[i]
+                i++
+                setTimeout(digitar, 90)
+            }
+          
+        }
+
+        digitar()
+    </script>
+</body>
+</html>
